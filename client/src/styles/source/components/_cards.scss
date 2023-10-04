@@ -1,0 +1,153 @@
+
+
+//Card solutions
+.section-solutions{
+    padding: 3rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 75.75rem;
+ 
+}
+
+.section-grid {
+    column-gap: 3.313rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    row-gap: 2rem;
+    margin: auto;
+grid-gap: clamp(1.375rem, 1.2rem + 0.89vw, 2rem);
+
+}
+
+.solutions {
+    background-color: #abb2bd;
+    border: 0.0625rem solid transparent;
+    border-radius: 0.25rem;
+    display: flex;
+    flex: 0 30%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    max-width: 40rem;    
+}
+
+.cardContent{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 4px, rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 0.25rem;
+    display: flex;
+    flex: 0 30%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    max-width: 40rem;
+}
+
+@media only screen and (min-width: 57.7rem) {
+    .section-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media only screen and (min-width: 72.75rem) {
+    .section-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+.web-logo{
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.blogImage{
+	
+	text-align: center
+}
+
+.imageBlog{
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 4rem;
+    border-radius: 50%;
+    
+}
+
+.avatar{
+	width:2rem;
+	border-radius: 50%;
+}
+
+.solution-details{
+    padding: 2rem 2rem 0.188rem;
+}
+
+@media only screen and (min-width: 57.7rem) {
+    .solutions {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+.solution-text {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.solution-text h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.solution-text p {
+    color: aliceblue;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.solution-title{
+    color: aliceblue;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.articleTitle{
+    color: #222020;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.articleText{
+    color:  #222020;
+   margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cardFooter{
+background-color: #c0c5ce;
+}
+
+.solution-footer{
+    padding: 1rem 2rem 2rem;
+    background-color: #c0c5ce;
+}
+
+.solutionFooter-cont{
+    color: aliceblue;
+    font-size: 0.875rem;
+}
+
+.solutionFooter-list ul {
+	list-style: none;
+}
+
+.solutionFooter-header{
+    margin-bottom: 0.688rem;
+}

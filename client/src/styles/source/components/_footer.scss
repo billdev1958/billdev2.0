@@ -1,0 +1,42 @@
+.footer-m{
+    display: flex;
+    margin: 0;
+    max-width: none;
+    border-top: 0.0625rem solid aliceblue;
+    
+}
+
+.footer-c{
+    color: black;
+    align-items: center;
+    display: flex;
+    margin: 0 1.5rem;
+    min-height: 4.125rem;
+    width: 1000%;
+}
+
+
+
+
+.footer-logo{
+    display: flex;
+    width: 1.5rem;
+    padding-right: 1rem;
+}
+
+.github-logo{
+    display: flex;
+    width: 2rem;
+    padding-right: 1rem;
+    text-align: end;
+    
+}
+
+.footer-list{
+    
+    align-items: center;
+    display: flex;
+    margin: 0 1.5rem;
+    min-height: 4.125rem;
+    
+}

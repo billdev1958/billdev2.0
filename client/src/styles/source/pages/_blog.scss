@@ -1,0 +1,13 @@
+.region{
+    padding-top: var(--region-space, clamp(3.75rem, 3.21rem + 2.68vw, 5.625rem));
+    padding-bottom: var(--region-space, clamp(3.75rem, 3.21rem + 2.68vw, 5.625rem));
+    background: #f8f9fa;
+}
+
+.blogTitle{
+    margin-inline: auto;
+    width: 85rem;
+    width: clamp(16rem, 95vw, 85rem);
+    padding-inline: clamp(1.375rem, 1.2rem + 0.89vw, 2rem);
+    position: relative;
+}

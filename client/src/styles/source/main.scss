@@ -1,0 +1,34 @@
+@use "./components/navBar";
+@use "./pages/homePage";
+@use "./pages/blog";
+@use "./components/footer";
+@use "./pages/contactPage";
+@use "./components/navBarMobile";
+@use "./pages/solutionsPage";
+@use "./components/cards";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Code+Pro:wght@200&display=swap");
+$source-code: "Source Code Pro", monospace;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.site {
+	box-sizing: border-box;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+html {
+	max-height: 100%;
+	min-height: 100vh;
+}
+
+.Header--dark {
+	border-bottom: none;
+	color: #fff;
+}

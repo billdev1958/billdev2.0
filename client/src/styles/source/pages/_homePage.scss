@@ -1,0 +1,109 @@
+
+.home-cont {
+    position: relative;
+    min-height: 100vh;
+
+}
+
+.header-logo{
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    font-size: 90px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.header-logo h1 {
+	font-size: 2rem;
+}
+
+
+.header-logo h2 {
+	font-size: 2rem;
+}
+.buttonM1{
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 700;
+    height: auto;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 15px 30px;
+    position: relative;
+    text-transform: uppercase;
+    transition: color .2s ease-in-out;
+    z-index: 0
+}
+
+
+
+.buttonM1:before {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(-101%);
+    transition: .2s ease-in-out;
+    z-index: -1
+}
+
+.buttonM1:hover {
+    color: #111;
+    text-decoration: none
+}
+
+.buttonM1:hover:before {
+    transform: translateX(0)
+}
+
+.header-introduction {
+    align-items: center;
+
+    display: flex;
+    justify-items: center;
+    overflow-x: hidden;
+    position: relative;
+    
+    
+}
+
+.intro-text{
+    color: #fff;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    max-width: 62.5rem;
+    padding: 3.75rem 2rem 2.25rem;
+    width: 90vw;
+    font-size: 1.3125rem;
+    line-height: 2.25rem;
+    height: 30vh;
+}
+
+.textI{
+    flex: 0 0 100%;
+    text-align: center;
+    color: #2d2d2d;
+
+}
+
+.home-title{
+    font-size: 2rem;
+    color: #111;
+}
+
+.home-p{
+    font-size: 3rem;
+    color: #111;
+}

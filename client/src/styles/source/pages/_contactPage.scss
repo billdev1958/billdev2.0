@@ -1,0 +1,51 @@
+.contactMain{
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logoContact{
+    width: 8rem;
+}
+
+.listContacts{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.contList{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2d2d2d;
+    border:  0.0625rem solid transparent;
+    padding: 3.75rem 2rem 2.25rem;
+
+}
+
+.contacts{
+   // border:  0.0625rem solid blanchedalmond;
+    padding: 1rem;
+}
+
+.solution-footer1{
+    padding: 1rem 2rem 2rem;
+    background-color: #2d2d2d;
+}
+
+.solutions1{
+background-color: #2d2d2d;
+    border: 0.0625rem solid transparent;
+    border-radius: 0.25rem;
+    display: flex;
+    flex: 0 30%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    max-width: 40rem;
+}
