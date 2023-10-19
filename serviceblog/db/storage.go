@@ -2,6 +2,7 @@ package db
 
 import (
 	"database/sql"
+	"fmt"
 	"log"
 	"os"
 
@@ -10,8 +11,10 @@ import (
 
 type Storage interface {
 	CreateUser(*User) error
+	GetUsers() ([]*User, error)
 	CreateCategory(*Category) error
 	GetCategories() ([]*Category, error)
+	CreatePost(*Posts) error
 }
 
 type PostgreStore struct {
@@ -50,6 +53,33 @@ func (s *PostgreStore) CreateUser(user *User) error {
 		return err
 	}
 	return nil
+}
+
+// Get all users
+func (s *PostgreStore) GetUsers() ([]*User, error) {
+	rows, err := s.db.Query("SELECT * FROM users")
+	if err != nil {
+		return nil, err
+	}
+	users := []*User{}
+
+	for rows.Next() {
+		user := new(User)
+		err := rows.Scan(
+			&user.ID,
+			&user.Nombre,
+			&user.Username,
+			&user.Email,
+			&user.Password,
+			&user.Hashed_password,
+			&user.Resume,
+		)
+		if err != nil {
+			return nil, err
+		}
+		users = append(users, user)
+	}
+	return users, nil
 }
 
 // Create category
@@ -92,16 +122,22 @@ func (s *PostgreStore) GetCategories() ([]*Category, error) {
 }
 
 // Create post
-/*func (s *PostgreStore) CreatePost(posts *Posts) error {
+func (s *PostgreStore) CreatePost(posts *Posts) error {
 	query := `INSERT INTO posts
-	(category, title, resume, content, author)
-	VALUES ($1, $2, $3, $4, $5)`
-	_, err := s.db.Query(
+	(category, title, resume, content, author, created_at)
+	VALUES ($1, $2, $3, $4, $5, $6)`
+	resp, err := s.db.Query(
 		query,
 		posts.Category,
 		posts.Title,
 		posts.Resume,
 		posts.Content,
-		post.Author,
+		posts.Author,
+		posts.CreatedAt,
 	)
-}*/
+	if err != nil {
+		return err
+	}
+	fmt.Printf("%+v\n", resp)
+	return nil
+}
